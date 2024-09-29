@@ -1,5 +1,5 @@
 # ReactNative_notes
 ### install react-native new project
-```reactnative
+```jsx
 npx react-native init basicreactnative
 ```
