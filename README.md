@@ -17,6 +17,7 @@ const  App = () => {
   )
 }
 export default App;
+```
 
 ## hooks
 1.) useState
