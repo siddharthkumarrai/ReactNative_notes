@@ -22,6 +22,7 @@ export default App;
 ## hooks
 1.) useState
 ```javascript
+import React,{useState} from "react";
 let [name,setName] = useState("sidd")
 ```
 2.) 
