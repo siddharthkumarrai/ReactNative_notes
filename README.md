@@ -19,7 +19,12 @@ const  App = () => {
 export default App;
 ```
 ### React-Native components
-  ```javscript
+1.) SafeAreaView, View, Text
+- SafeAreaview : It prevent overlapping
+- View : Just like a div
+- Text : string text on display
+
+```javascript
 import {Text, View, SafeAreaView } from "react-native";
     <SafeAreaView>
     <View>
@@ -27,6 +32,7 @@ import {Text, View, SafeAreaView } from "react-native";
     </View>
     </SafeAreaView>
 ```
+
 
 2.) StyleSheet
 ```javascript
