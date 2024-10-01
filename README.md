@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 1.) useColorScheme
 ```javascript
 let isDarkMode = useColorScheme() === 'dark'
-<Text style={isDarkMode? 'styles.whiteText': 'styles.blackText'}> hii i am don </Text>
+<Text style={isDarkMode? styles.whiteText: styles.blackText}> hii i am don </Text>
 ```
 
 2.) useState
