@@ -23,6 +23,7 @@ export default App;
 - SafeAreaview : It prevent overlapping
 - View : Just like a div
 - Text : string text on display
+  
 ```javscript
 import {Text, View, SafeAreaView } from "react-native";
     <SafeAreaView>
@@ -31,6 +32,7 @@ import {Text, View, SafeAreaView } from "react-native";
     </View>
     </SafeAreaView>
 ```
+
 2.) StyleSheet
 ```javascript
 import { StyleSheet } from 'react-native'
