@@ -48,7 +48,15 @@ const styles = StyleSheet.create({
   }
 })
 ```
-
+3.) ScrollView
+```javascript
+import { ScrollView } from 'react-native'
+<ScrollView horizontal={true} style={styles.cardsContainer} >
+    <View style={styles.container} >
+    <Text> hii i am don </Text>
+    </View>
+</ScrollView>
+```
 
 ## hooks
 1.) useColorScheme
