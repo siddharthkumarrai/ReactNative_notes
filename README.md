@@ -19,10 +19,10 @@ const  App = () => {
 export default App;
 ```
 ### React-Native components
-1.) SafeAreaview, View, Text
+1.) SafeAreaView, View, Text
 - SafeAreaview : It prevent overlapping
 - View : Just like a div
-- Text : 
+- Text : string text on display
 ```javscript
 import {Text, View, SafeAreaView } from "react-native";
     <SafeAreaView>
