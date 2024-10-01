@@ -57,6 +57,15 @@ import { ScrollView } from 'react-native'
     </View>
 </ScrollView>
 ```
+4.) Image
+```javascript
+<Image
+source={{
+    uri: 'https://something'
+}}
+style={styles.cardImage}
+/>
+```
 
 ## hooks
 1.) useColorScheme
