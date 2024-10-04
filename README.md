@@ -1,3 +1,12 @@
+cmd to start emulator on real device without usb cable
+1.) C:\Users\siddh\AppData\Local\Android\Sdk\platform-tools> open cmd
+2.) adb devices
+3.) adb tcpip 5555
+4.) adb connect 192.168.1.2:43683
+
+for screen copy
+scrcpy -s 192.168.1.2:46135
+
 # ReactNative_notes
 ### install react-native new project
 ```javascript
@@ -66,6 +75,9 @@ source={{
 style={styles.cardImage}
 />
 ```
+5.) Linking
+```javascript
+import { Linking } from 'react-native'
 
 ## hooks
 1.) useColorScheme
