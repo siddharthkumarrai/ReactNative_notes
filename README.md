@@ -76,12 +76,12 @@ export default function ActionCard() {
     Linking.openURL(websiteLink);
   }
 
-<TouchableOpacity style={[styles.btn1Container]}
+<TouchableOpacity
     onPress={function(){
         openWebsite('https://www.google.com');
     }}
 >
-    <Text style={styles.btn1}>Details</Text>
+    <Text>Details</Text>
 </TouchableOpacity>
 ```
 
