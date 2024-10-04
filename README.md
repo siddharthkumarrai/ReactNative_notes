@@ -72,17 +72,17 @@ import { Linking, TouchableOpacity } from 'react-native'
 
 export default function ActionCard() {
 
-  function openWebsite(websiteLink: string) {
-    Linking.openURL(websiteLink);
-  }
+    function openWebsite(websiteLink: string) {
+      Linking.openURL(websiteLink);
+    }
 
-<TouchableOpacity
-    onPress={function(){
-        openWebsite('https://www.google.com');
-    }}
->
-    <Text>Details</Text>
-</TouchableOpacity>
+      <TouchableOpacity
+          onPress={function(){
+              openWebsite('https://www.google.com');
+          }}
+      >
+          <Text>Details</Text>
+      </TouchableOpacity>
 
 }
 ```
