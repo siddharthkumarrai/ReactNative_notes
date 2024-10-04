@@ -1,12 +1,3 @@
-cmd to start emulator on real device without usb cable
-1.) C:\Users\siddh\AppData\Local\Android\Sdk\platform-tools> open cmd
-2.) adb devices
-3.) adb tcpip 5555
-4.) adb connect 192.168.1.2:43683
-
-for screen copy
-scrcpy -s 192.168.1.2:46135
-
 # ReactNative_notes
 ### install react-native new project
 ```javascript
@@ -75,9 +66,24 @@ source={{
 style={styles.cardImage}
 />
 ```
-5.) Linking
+5.) Linking and TouchableOpacity
 ```javascript
-import { Linking } from 'react-native'
+import { Linking, TouchableOpacity } from 'react-native'
+
+export default function ActionCard() {
+
+  function openWebsite(websiteLink: string) {
+    Linking.openURL(websiteLink);
+  }
+
+<TouchableOpacity style={[styles.btn1Container]}
+    onPress={function(){
+        openWebsite('https://www.google.com');
+    }}
+>
+    <Text style={styles.btn1}>Details</Text>
+</TouchableOpacity>
+```
 
 ## hooks
 1.) useColorScheme
