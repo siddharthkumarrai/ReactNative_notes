@@ -83,6 +83,8 @@ export default function ActionCard() {
 >
     <Text>Details</Text>
 </TouchableOpacity>
+
+}
 ```
 
 ## hooks
