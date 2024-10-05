@@ -86,6 +86,28 @@ export default function ActionCard() {
 
 }
 ```
+6.) TextInput
+```javascript
+import { Button , Text, TextInput, View } from 'react-native'
+import React  from 'react'
+
+export default function App() {
+  return (
+      <View>
+        <TextInput
+        value={sidd}
+        style={{borderWidth:1,borderColor:'white'}}
+        placeholder='enter name'
+        onChangeText={(text)=>{setSidd(text)}}
+        />
+        <Button
+        title='onPress'
+        onPress={()=>setSidd('')}
+        />
+      </View>
+  )
+}
+```
 
 ## hooks
 1.) useColorScheme
