@@ -1,11 +1,11 @@
 # Reat Native Styles
 
 ### Styles
-#### inline style
+#### Inline style
 ```javascript
 <Text style={{fontSize:32}} >hann bhai </Text>
 ```
-#### internal style
+#### Internal style
 ```javascript
 import { StyleSheet } from 'react-native'
 
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 })
 
 ```
-#### External
+#### External Style 
 > style.tsx
 ```javascript
 import { StyleSheet } from 'react-native'
@@ -34,9 +34,7 @@ export default styles = StyleSheet.create({
 })
 
 ```
-
-
-
+## css property
 ```
 ```css
   card: {
