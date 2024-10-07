@@ -117,14 +117,41 @@ secur password attribute
         />
 ```
 7.) FlatList
-let userdata = [{ id: 123, name: 'sidd' }]
 ```javascript
+let userdata = [{ id: 123, name: 'sidd' }]
         <FlatList
           data={userData}
           renderItem={({item}) => <Text style={styles.item}>{item.name}</Text>
           keyExtractor={(item) => item.id}
         }
         />
+```
+
+8.) SectionList
+```javascript
+import React,{useState} from "react";
+let [name,setName] = useState("sidd")
+```
+
+const DATA = [
+  {
+    title: 'Main dishes',
+    data: ['Pizza', 'Burger', 'Risotto'],
+  },
+];
+
+    <SectionList
+      sections={DATA}
+      keyExtractor={(item, index) => item + index}
+      renderItem={({item}) => (
+        <View style={styles.item}>
+          <Text style={styles.title}>{item}</Text>
+        </View>
+      )}
+      renderSectionHeader={({section: {title}}) => (
+        <Text style={styles.header}>{title}</Text>
+      )}
+    />
 ```
 
 ## hooks
