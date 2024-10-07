@@ -92,13 +92,15 @@ import { Button , Text, TextInput, View } from 'react-native'
 import React  from 'react'
 
 export default function App() {
+let [name, setName] = useState('')
+
   return (
       <View>
         <TextInput
         value={sidd}
         style={{borderWidth:1,borderColor:'white'}}
         placeholder='enter name'
-        onChangeText={(text)=>{setSidd(text)}}
+        onChangeText={(text)=>{setName(text)}}
         />
         <Button
         title='onPress'
@@ -107,6 +109,22 @@ export default function App() {
       </View>
   )
 }
+
+secur password attribute
+        <TextInput
+        secureTextEntry={true}
+        onChangeText={(text)=>{setPassword(text)}}
+        />
+```
+7.) FlatList
+let userdata = [{ id: 123, name: 'sidd' }]
+```javascript
+        <FlatList
+          data={userData}
+          renderItem={({item}) => <Text style={styles.item}>{item.name}</Text>
+          keyExtractor={(item) => item.id}
+        }
+        />
 ```
 
 ## hooks
