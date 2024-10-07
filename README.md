@@ -128,10 +128,10 @@ let userdata = [{ id: 123, name: 'sidd' }]
 ```
 
 8.) SectionList
+
 ```javascript
 import React,{useState} from "react";
 let [name,setName] = useState("sidd")
-```
 
 const DATA = [
   {
