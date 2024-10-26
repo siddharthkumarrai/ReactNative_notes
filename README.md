@@ -229,7 +229,7 @@ import {Formik} from 'formik';
             )}
 </Formik>
 ```
-## react-native-bouncy-checkbox
+3.) react-native-bouncy-checkbox
 ```javascript
 npm i react-native-bouncy-checkbox
 ```
