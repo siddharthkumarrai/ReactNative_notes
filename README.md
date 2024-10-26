@@ -184,3 +184,49 @@ const passwordSchema = Yup.object().shape({
   .required('length is required')
 })
 ```
+2.) Formik (for form handling)
+```javascript
+npm i formik
+```
+```javascript
+import {Formik} from 'formik';
+<Formik
+            initialValues={{passwordLength: ''}}
+            validationSchema={passwordSchema}
+            onSubmit={value =>
+              createPasswordString(Number(value.passwordLength))
+            }>
+            {({
+              values,
+              errors,
+              touched,
+              handleChange,
+              handleSubmit,
+              handleReset,
+              isValid,
+            }) => (
+              <>
+                    {touched.passwordLength && errors.passwordLength && (
+                      <>
+                          {errors.passwordLength}
+                      </>
+                    )}
+                  <TextInput
+                    value={values.passwordLength}
+                    onChangeText={handleChange('passwordLength')}
+                    placeholder="Ex. 8"
+                    keyboardType="numeric"
+                  />
+                  <TouchableOpacity
+                    style={styles.secondaryBtn}
+                    disabled={!isValid}
+                    onPress={() => {
+                      resetPassword();
+                      handleReset();
+                    }}>
+                  </TouchableOpacity>
+              </>
+            )}
+</Formik>
+```
+
