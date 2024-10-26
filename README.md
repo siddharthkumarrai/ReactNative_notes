@@ -229,4 +229,19 @@ import {Formik} from 'formik';
             )}
 </Formik>
 ```
+## react-native-bouncy-checkbox
+```javascript
+npm i react-native-bouncy-checkbox
+```
+```javascript
+import BouncyCheckbox from 'react-native-bouncy-checkbox';
+
+    <Text style={styles.heading}>Include SpecialCharacter</Text>
+    <BouncyCheckbox
+      disableText
+      isChecked={specialCharacter}
+      fillColor="#e0aaff"
+      onPress={() => setSpecialCharacter(!specialCharacter)}
+    />
+```
 
