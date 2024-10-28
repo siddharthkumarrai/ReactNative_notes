@@ -3,6 +3,10 @@
 ```javascript
 npx react-native init basicreactnative
 ```
+```javascript
+npx @react-native-community/cli init backgroundchanger03
+
+```
 ### First program
 > App.tsx
 ```javascript
