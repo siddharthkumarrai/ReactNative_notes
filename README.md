@@ -217,6 +217,7 @@ export default function App():JSX.Element {
       <HandleDiceImage imageUrl={DiceSix} />
   )
 }
+```
 
 ## dependencies
 1.) yup (Form validation)
