@@ -124,6 +124,12 @@ secur password attribute
 ```javascript
 <StatusBar backgroundColor="black" />
 ```
+8.) Pressable
+```javascript
+      <Pressable onPress={function}>
+        <Text>press</Text>
+      </Pressable>
+```
 7.) FlatList
 ```javascript
 let userdata = [{ id: 123, name: 'sidd' }]
@@ -213,8 +219,9 @@ let HandleDiceImage = ({imageUrl}:diceProperty):JSX.Element =>{
 - step 6: use the imageName component
 ```javascript
 export default function App():JSX.Element {
+const [dice, setDice] = useState < ImageSourcePropType>(DiceOne);
   return (
-      <HandleDiceImage imageUrl={DiceSix} />
+      <HandleDiceImage imageUrl={dice} />
   )
 }
 ```
@@ -294,4 +301,6 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox';
       onPress={() => setSpecialCharacter(!specialCharacter)}
     />
 ```
+4.) react-native-haptic-feedback
+[Read docs](https://www.npmjs.com/package/react-native-haptic-feedback)
 
