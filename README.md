@@ -191,7 +191,7 @@ import DiceOne from '../assets/One.png'
 ```javascript
 declare module '.*png'
 ```
-- step 5: declare ImageSourcePropType
+- step 5: declare type ImageSourcePropType
 ```javascript
 import { ImageSourcePropType } from 'react-native'
 import React, { PropsWithChildren } from 'react'
