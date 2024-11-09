@@ -191,7 +191,7 @@ import DiceOne from '../assets/One.png'
 ```javascript
 declare module '.*png'
 ```
-- step 5: declare type ImageSourcePropType
+- step 4: declare type ImageSourcePropType
 ```javascript
 import { ImageSourcePropType } from 'react-native'
 import React, { PropsWithChildren } from 'react'
@@ -200,7 +200,7 @@ type diceProperty = PropsWithChildren<{
   imageUrl: ImageSourcePropType
 }>
 ```
-- step 6: making a ImageName component
+- step 5: making a ImageName component
 ```javascript
 let HandleDiceImage = ({imageUrl}:diceProperty):JSX.Element =>{
   return(
@@ -210,7 +210,7 @@ let HandleDiceImage = ({imageUrl}:diceProperty):JSX.Element =>{
   )
 }
 ```
-- step 7: use the imageName component
+- step 6: use the imageName component
 ```javascript
 export default function App():JSX.Element {
   return (
