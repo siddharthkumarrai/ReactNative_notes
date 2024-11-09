@@ -177,7 +177,7 @@ let [name,setName] = useState("sidd")
 
 3.)
 ## How to handle Image in React-Native
--  step 1: make ```javascriptassets``` folder in root directory
+-  step 1: make ```assets``` folder in root directory
 > assets
 ```javascript
 one.png
@@ -186,7 +186,7 @@ one.png
 ```javascript
 import DiceOne from '../assets/One.png'
 ```
-- step 3: make file ```javascriptindex.d.ts``` in src directory
+- step 3: make file ```index.d.ts``` in src directory
 >index.d.ts
 ```javascript
 declare module '.*png'
