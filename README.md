@@ -175,7 +175,48 @@ import React,{useState} from "react";
 let [name,setName] = useState("sidd")
 ```
 
-3.) 
+3.)
+## How to handle Image in React-Native
+-  step 1: make ```javascriptassets``` folder in root directory
+> assets
+```javascript
+one.png
+```
+-  step 2: import images
+```javascript
+import DiceOne from '../assets/One.png'
+```
+- step 3: make file ```javascriptindex.d.ts``` in src directory
+>index.d.ts
+```javascript
+declare module '.*png'
+```
+- step 5: declare ImageSourcePropType
+```javascript
+import { ImageSourcePropType } from 'react-native'
+import React, { PropsWithChildren } from 'react'
+
+type diceProperty = PropsWithChildren<{
+  imageUrl: ImageSourcePropType
+}>
+```
+- step 6: making a ImageName component
+```javascript
+let HandleDiceImage = ({imageUrl}:diceProperty):JSX.Element =>{
+  return(
+    <View>
+      <Image style={{height:100, width: 100}} source={imageUrl}/>
+    </View>
+  )
+}
+```
+- step 7: use the imageName component
+```javascript
+export default function App():JSX.Element {
+  return (
+      <HandleDiceImage imageUrl={DiceSix} />
+  )
+}
 
 ## dependencies
 1.) yup (Form validation)
