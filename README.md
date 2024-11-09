@@ -120,6 +120,10 @@ secur password attribute
         onChangeText={(text)=>{setPassword(text)}}
         />
 ```
+7.) StatusBar
+```javascript
+<StatusBar backgroundColor="black" />
+```
 7.) FlatList
 ```javascript
 let userdata = [{ id: 123, name: 'sidd' }]
