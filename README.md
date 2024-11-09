@@ -302,5 +302,6 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox';
     />
 ```
 4.) react-native-haptic-feedback
+
 [Read docs](https://www.npmjs.com/package/react-native-haptic-feedback)
 
