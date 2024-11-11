@@ -305,3 +305,5 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox';
 
 [Read docs](https://www.npmjs.com/package/react-native-haptic-feedback)
 
+5.) react-native-snackbar
+
