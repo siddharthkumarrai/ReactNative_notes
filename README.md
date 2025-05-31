@@ -5,7 +5,10 @@ npx react-native init basicreactnative
 ```
 ```javascript
 npx @react-native-community/cli init backgroundchanger03
-
+```
+>android/local.properties
+```javascript
+sdk.dir=C:\\Users\\siddh\\AppData\\Local\\Android\\Sdk
 ```
 ### First program
 > App.tsx
