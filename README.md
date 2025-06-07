@@ -133,7 +133,7 @@ secur password attribute
         <Text>press</Text>
       </Pressable>
 ```
-7.) FlatList
+9.) FlatList
 ```javascript
 let userdata = [{ id: 123, name: 'sidd' }]
         <FlatList
@@ -144,7 +144,7 @@ let userdata = [{ id: 123, name: 'sidd' }]
         />
 ```
 
-8.) SectionList
+10.) SectionList
 
 ```javascript
 import React,{useState} from "react";
@@ -170,6 +170,15 @@ const DATA = [
       )}
     />
 ```
+11.) ImageBackground
+```javascript
+import {ImageBackground, StyleSheet, Text} from 'react-native';
+
+<ImageBackground source={image} resizeMode="cover" style={styles.image}>
+        <Text style={styles.text}>Inside</Text>
+</ImageBackground>
+```
+- source={require('../../assets/image.png')}
 
 ## hooks
 1.) useColorScheme
@@ -310,3 +319,5 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox';
 
 5.) react-native-snackbar
 
+## PROJECT
+> src/screens/splash
