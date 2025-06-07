@@ -338,3 +338,53 @@ export default function SplashScreen() {
     );
 }
 ```
+### Navigation
+- Installation
+```javascript 
+npm install @react-navigation/native
+```
+```javascript 
+npm install react-native-screens react-native-safe-area-context
+```
+- react-native-screens package requires one additional configuration
+> android/app/src/main/java/<your package name>/ MainActivity.kt
+-  import statement at the top of this file below your package statement:
+```javascript
+import android.os.Bundle;
+```
+```javascript
+class MainActivity: ReactActivity() {
+  // ...
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(null)
+  }
+  // ...
+}
+```
+```javascript
+npm install @react-navigation/native-stack
+```
+> App.jsx
+```javascript
+import React from 'react';
+import SplashScreen from './src/screens/splash';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="home"
+          component={SplashScreen}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
+```
