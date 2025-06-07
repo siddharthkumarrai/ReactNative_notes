@@ -321,7 +321,7 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox';
 
 ## PROJECT
 > src/screens/splash
-```
+```javascript
 import { View, Text, ImageBackground } from 'react-native';
 
 export default function SplashScreen() {
