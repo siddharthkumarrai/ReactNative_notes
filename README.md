@@ -361,6 +361,7 @@ class MainActivity: ReactActivity() {
   // ...
 }
 ```
+- Installing the native stack navigator library
 ```javascript
 npm install @react-navigation/native-stack
 ```
