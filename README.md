@@ -324,7 +324,10 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox';
 ```javascript
 import { View, Text, ImageBackground } from 'react-native';
 
-export default function SplashScreen() {
+export default function SplashScreen({ navigation }) {
+    setTimeout(() => {
+        navigation.navigate('signIn')
+    }, 2000)
     return (
         <ImageBackground
             source={require('../../../assets/splashscreenbackgroundimage.png')}
