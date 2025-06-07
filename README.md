@@ -321,3 +321,20 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox';
 
 ## PROJECT
 > src/screens/splash
+```
+import { View, Text, ImageBackground } from 'react-native';
+
+export default function SplashScreen() {
+    return (
+        <ImageBackground
+            source={require('../../../assets/splashscreenbackgroundimage.png')}
+            style={{ flex: 1 }}
+            resizeMode={'stretch'}
+        >
+                <Text>
+                    Welcome
+                </Text>
+        </ImageBackground>
+    );
+}
+```
